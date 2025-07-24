@@ -37,6 +37,7 @@ public class PedidoService {
         for (int i = 0; i != cantidad; i++) { // Debería ser < en lugar de !=
             if (inventarioService.venderProducto(productoId, 1)) {
                 pedido.agregarProducto(producto);
+                //
             } else {
                 return false;
             }
